@@ -7,10 +7,13 @@ type AppState = { count: number; showGreeting: boolean };
 
 class Greeting extends Component {
   componentDidMount() {
+    // Api requests
+    // Create event listeners
     console.log("componentDidMount Greeting");
   }
 
   componentWillUnmount() {
+    // Delete event listeners
     console.log("componentWillUnmount Greeting");
   }
 
@@ -33,6 +36,7 @@ class App extends Component<AppProps, AppState> {
   }
 
   componentDidUpdate(prevProps: AppProps, prevState: AppState) {
+    // to execute effects if its necessary
     console.log(`componentDidUpdate prevProps ${JSON.stringify(prevProps)} prevState ${JSON.stringify(prevState)}`);
   }
 
