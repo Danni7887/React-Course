@@ -1,11 +1,9 @@
-import React from 'react'
+import { Component } from 'react'
 
-type Props = {}
-
-const App = (props: Props) => {
-  return (
-    <div>App</div>
-  )
+class App extends Component {
+  render() {
+    return <h1>Im a react class component</h1>
+  }
 }
 
 export default App
