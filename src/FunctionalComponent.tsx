@@ -12,7 +12,7 @@ function Greeting() {
   return <h3>Hello</h3>;
 }
 
-const App = () => {
+const FunctionalComponent = () => {
   const [show, setShow] = useState(true);
   const [count, setCount] = useState(0);
 
@@ -43,4 +43,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default FunctionalComponent;
